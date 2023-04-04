@@ -28,15 +28,15 @@ export const Menu = styled.ul`
     @media (max-width:840px){
         background: var(--cor-gray);
         backdrop-filter: blur(3px);
-        display: ${({ showMenu })=> (showMenu ? 'flex' : 'none')};
+        display: ${({ showMenu }) => (showMenu ? 'flex' : 'none')};
         flex-direction: column;
-        height: 100vh;
         justify-content: start;
+        opacity: .95;
         padding: 1rem 0;
         position: absolute;
         right: 0;
         top: 80px;
-        width: 80%;
+        width: 60%;
         z-index: 99;
     }
 `

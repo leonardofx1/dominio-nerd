@@ -16,12 +16,11 @@ const Header = () => {
                 </C.Title>
             
             
-                <C.Menu>
+                <C.Menu showMenu={showMenu}>
                     <C.ItemMenu>
                         <C.LinkItem
                             style={{textDecoration:'none'}} 
                             to='home'
-                            onClick={() => setShowMenu(!showMenu)}
                         >
                             Início  
                         </C.LinkItem>
@@ -30,7 +29,6 @@ const Header = () => {
                         <C.LinkItem
                             style={{textDecoration:'none'}} 
                             to='about'
-                            onClick={() => setShowMenu(!showMenu)}
                         >
                             Sobre o jogo
                         </C.LinkItem>
@@ -39,7 +37,6 @@ const Header = () => {
                         <C.LinkItem
                             style={{textDecoration:'none'}} 
                             to='products'
-                            onClick={() => setShowMenu(!showMenu)}
                         >
                             Produtos
                         </C.LinkItem>
@@ -48,7 +45,6 @@ const Header = () => {
                         <C.LinkItem
                             style={{textDecoration:'none'}} 
                             to='constact'
-                            onClick={() => setShowMenu(!showMenu)}
                         >
                             Contatos
                         </C.LinkItem>
