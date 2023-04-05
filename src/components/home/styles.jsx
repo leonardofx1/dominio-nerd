@@ -9,6 +9,12 @@ export const Main = styled.main`
     min-height: calc(100vh - 100px);
     position: relative;
     width: 100vw;
+
+    @media(max-width: 840px){
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 export const Container = styled.div`
@@ -17,8 +23,12 @@ export const Container = styled.div`
     color: var(--cor-light);
     display: flex;
     justify-content: center;
-    min-width: 50%;
+    width: 50%;
     overflow: hidden;
+
+    @media(max-width: 840px){
+        width: 100%;
+    }
 `
 export const TextField = styled.div`
     align-items: center;
@@ -36,6 +46,11 @@ export const SlideContainer = styled.div`
     justify-content: center;
     width: 65%;
     overflow: hidden;
+
+    @media(max-width: 840px){
+        margin-top: 80vh;
+        width: 70%;
+    }
 `
 
 export const SlideBox = styled.div`
@@ -44,6 +59,12 @@ export const SlideBox = styled.div`
     margin: 0 1rem;
     min-height: calc(90vh - 100px);
     min-width: 30vw;
+
+    @media(max-width: 840px){
+        min-height: 70vh;
+        min-width: 70vw;
+        margin-bottom: 2rem;
+    }
 `
 
 export const Mini = styled.img`
