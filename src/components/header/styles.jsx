@@ -30,13 +30,14 @@ export const Menu = styled.ul`
         backdrop-filter: blur(3px);
         display: ${({ showMenu }) => (showMenu ? 'flex' : 'none')};
         flex-direction: column;
+        height: 100%;
         justify-content: start;
         opacity: .95;
         padding: 1rem 0;
         position: absolute;
         right: 0;
         top: 80px;
-        width: 60%;
+        width: 70%;
         z-index: 99;
     }
 `

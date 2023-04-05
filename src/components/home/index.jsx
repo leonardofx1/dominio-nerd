@@ -33,7 +33,7 @@ const Home = () => {
             </C.Container>
             <C.Container>
                 <button style={{zIndex:5}}>Prev</button>
-                <C.SlideContainer>
+                <C.SlideField>
                     <C.SlideBox>
 
                     </C.SlideBox>
@@ -43,7 +43,7 @@ const Home = () => {
                     <C.SlideBox>
                         
                     </C.SlideBox>
-                </C.SlideContainer>
+                </C.SlideField>
                 <button style={{zIndex:5}}>Next</button>
             </C.Container>
         </C.Main>

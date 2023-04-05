@@ -38,9 +38,14 @@ export const TextField = styled.div`
     top: 80px;
     text-align: center;
     width: 40%;
+    
+    @media(max-width: 840px){
+        top:10px;
+        width: 90%;
+    }
 `
 
-export const SlideContainer = styled.div`
+export const SlideField = styled.div`
     align-items: center;
     display: flex;
     justify-content: center;
@@ -48,7 +53,7 @@ export const SlideContainer = styled.div`
     overflow: hidden;
 
     @media(max-width: 840px){
-        margin-top: 80vh;
+        margin-top: 45vh;
         width: 70%;
     }
 `
@@ -61,7 +66,7 @@ export const SlideBox = styled.div`
     min-width: 30vw;
 
     @media(max-width: 840px){
-        min-height: 70vh;
+        min-height: 35vh;
         min-width: 70vw;
         margin-bottom: 2rem;
     }
@@ -69,5 +74,9 @@ export const SlideBox = styled.div`
 
 export const Mini = styled.img`
     position: absolute;
-    width: 300px
+    width: 300px;
+
+    @media(max-width: 840px){
+        display: none;
+    }
 `
