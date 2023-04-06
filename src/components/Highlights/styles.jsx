@@ -99,7 +99,7 @@ export const SlideButton = styled.button`
 
     @media(max-width: 840px){
         position: absolute;
-        top: 630px;
+        top: 650px;
     }
 `
 
