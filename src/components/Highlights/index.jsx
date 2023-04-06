@@ -4,7 +4,7 @@ import * as C from './styles'
 import MiniBotton from '/mini-wonderwoman.svg'
 import MiniTop from '/mini-thor.svg'
 
-const Home = () => {
+const Highlights = () => {
     return (
         <C.Main>
             <C.Mini
@@ -50,4 +50,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Highlights
