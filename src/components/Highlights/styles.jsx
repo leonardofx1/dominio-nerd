@@ -14,7 +14,7 @@ export const Main = styled.main`
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        min-height: 85vh;
+        min-height: 60vh;
     }
 `
 
@@ -29,7 +29,7 @@ export const Container = styled.div`
 
     @media(max-width: 840px){
         width: 100%;
-        min-height:85vh;
+        min-height:60vh;
     }
 `
 export const TextField = styled.div`
@@ -65,7 +65,7 @@ export const SlideField = styled.div`
 
     @media(max-width: 840px){
         position: absolute;
-        bottom: 100px;
+        top: 500px;
         left: auto;
         width: 70%;
     }
@@ -99,7 +99,7 @@ export const SlideButton = styled.button`
 
     @media(max-width: 840px){
         position: absolute;
-        bottom: 210px;
+        top: 580px;
     }
 `
 
