@@ -1,10 +1,9 @@
 import React from 'react'
-import Header from './components/header'
-import Home from './components/Highlights'
+import Header from '../components/header/index'
+import Highlights from '../components/Highlights/index'
 
-function Home() {
-
-  return (
+const Home = () => {
+  return(
     <>
       <Header/>
       <Highlights/>
