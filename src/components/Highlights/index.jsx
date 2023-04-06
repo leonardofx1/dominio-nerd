@@ -44,7 +44,7 @@ const Highlights = () => {
             <C.Container>
                 <C.SlideButton 
                     style={{
-                        left:20
+                        left:10
                 }}>
                     <IoMdArrowDropleftCircle/>
                 </C.SlideButton>
@@ -61,7 +61,7 @@ const Highlights = () => {
                 </C.SlideField>
                 <C.SlideButton 
                     style={{
-                        right:20
+                        right:10
                 }}>
                     <IoMdArrowDroprightCircle/>
                 </C.SlideButton>
