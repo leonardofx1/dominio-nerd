@@ -19,47 +19,45 @@ const Header = () => {
             
                 <C.Menu showMenu={showMenu}>
                     <Link
-                            to='/'
-                        >
-                    <C.ItemMenu>
-                        
-                            <C.LinkItem
-                                style={{textDecoration:'none'}} 
-                                to='home'
-                            >
+                        style={{textDecoration:'none'}} 
+                        to='/'
+                    >
+                        <C.ItemMenu>
+                            <C.LinkItem>
                                 Início  
                             </C.LinkItem>
-                       
-                    </C.ItemMenu>
+                        </C.ItemMenu>
                     </Link>
                     <Link
-                        to='about'
+                        style={{textDecoration:'none'}} 
+                        to='/sobre'
                     >
-                    <C.ItemMenu>
-                        
-                        <C.LinkItem
-                            style={{textDecoration:'none'}}
-                        >
-                            Sobre o jogo
-                        </C.LinkItem>
-                    </C.ItemMenu>
+                        <C.ItemMenu>       
+                            <C.LinkItem>
+                                Sobre o Jogo
+                            </C.LinkItem>
+                        </C.ItemMenu>
                     </Link>
-                    <C.ItemMenu>
-                        <C.LinkItem
-                            style={{textDecoration:'none'}} 
-                            to='products'
-                        >
-                            Produtos
-                        </C.LinkItem>
-                    </C.ItemMenu>
-                    <C.ItemMenu>
-                        <C.LinkItem
-                            style={{textDecoration:'none'}} 
-                            to='constact'
-                        >
-                            Contatos
-                        </C.LinkItem>
-                    </C.ItemMenu>
+                    <Link
+                        style={{textDecoration:'none'}} 
+                        to='/produtos'
+                    >
+                        <C.ItemMenu>
+                            <C.LinkItem>
+                                Produtos
+                            </C.LinkItem>
+                        </C.ItemMenu>
+                    </Link>
+                    <Link
+                        style={{textDecoration:'none'}} 
+                        to='/contatos'
+                    >
+                        <C.ItemMenu>
+                            <C.LinkItem>
+                                Contatos
+                            </C.LinkItem>
+                        </C.ItemMenu>
+                    </Link>
                 </C.Menu>
             
 

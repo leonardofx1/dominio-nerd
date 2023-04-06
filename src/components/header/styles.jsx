@@ -44,11 +44,6 @@ export const Menu = styled.ul`
 export const ItemMenu = styled.li`
     margin: 0 1rem;
 
-    :hover{
-        color: var(--cor-light);
-        font-size: 1.2rem;
-    }
-
     @media (max-width: 840px){
         margin: 1rem auto;
     }
@@ -59,6 +54,11 @@ export const LinkItem = styled.a`
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: capitalize;
+
+    :hover{
+        color: var(--cor-light);
+        font-size: 1.2rem;
+    }
 `
 
 export const ButtonMenu = styled.div`
