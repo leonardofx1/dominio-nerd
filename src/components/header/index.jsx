@@ -3,6 +3,7 @@ import {
     CgMenuRound,
     CgCloseO
 } from 'react-icons/cg'
+import { Link } from 'react-router-dom'
 
 import * as C from './styles'
 
@@ -17,22 +18,32 @@ const Header = () => {
             
             
                 <C.Menu showMenu={showMenu}>
-                    <C.ItemMenu>
-                        <C.LinkItem
-                            style={{textDecoration:'none'}} 
-                            to='home'
+                    <Link
+                            to='/'
                         >
-                            Início  
-                        </C.LinkItem>
-                    </C.ItemMenu>
                     <C.ItemMenu>
+                        
+                            <C.LinkItem
+                                style={{textDecoration:'none'}} 
+                                to='home'
+                            >
+                                Início  
+                            </C.LinkItem>
+                       
+                    </C.ItemMenu>
+                    </Link>
+                    <Link
+                        to='about'
+                    >
+                    <C.ItemMenu>
+                        
                         <C.LinkItem
-                            style={{textDecoration:'none'}} 
-                            to='about'
+                            style={{textDecoration:'none'}}
                         >
                             Sobre o jogo
                         </C.LinkItem>
                     </C.ItemMenu>
+                    </Link>
                     <C.ItemMenu>
                         <C.LinkItem
                             style={{textDecoration:'none'}} 
