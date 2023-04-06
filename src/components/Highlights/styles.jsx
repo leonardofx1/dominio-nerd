@@ -65,7 +65,7 @@ export const SlideField = styled.div`
 
     @media(max-width: 840px){
         position: absolute;
-        top: 500px;
+        top: 520px;
         left: auto;
         width: 70%;
     }
@@ -99,7 +99,7 @@ export const SlideButton = styled.button`
 
     @media(max-width: 840px){
         position: absolute;
-        top: 580px;
+        top: 600px;
     }
 `
 
