@@ -14,7 +14,7 @@ export const Main = styled.main`
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        min-height: calc(85vh - 100px);
+        min-height: 85vh;
     }
 `
 
@@ -29,7 +29,7 @@ export const Container = styled.div`
 
     @media(max-width: 840px){
         width: 100%;
-        min-height: calc(85vh - 100px);
+        min-height:85vh;
     }
 `
 export const TextField = styled.div`
