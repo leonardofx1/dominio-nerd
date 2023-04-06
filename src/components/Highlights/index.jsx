@@ -1,8 +1,15 @@
 import React from 'react'
 
-import * as C from './styles'
+import {
+    IoMdArrowDroprightCircle,
+    IoMdArrowDropleftCircle
+} from 'react-icons/io'
+
+import LogoDNw from '/dominio-nerd-logo-w.svg'
 import MiniBotton from '/mini-wonderwoman.svg'
 import MiniTop from '/mini-thor.svg'
+
+import * as C from './styles'
 
 const Highlights = () => {
     return (
@@ -25,14 +32,22 @@ const Highlights = () => {
             />
             <C.Container>
                 <C.TextField>
-                    <h1 style={{marginBottom:'1rem'}}>Dominio Nerd</h1>
+                    <C.Logo 
+                        src={LogoDNw}
+                        alt='Logo Dominio Nerd'
+                    />
                     <h2 style={{marginBottom:'1rem'}}>Venha jogar Heroclix!</h2>
                     <p style={{marginBottom:'2rem'}}>Nesse jogo, acontece e então as coisas serão jogadas com regras e detalhes para  melhor quando então foi assim que se fez e com isso o melhor de tudo que pode e vença desafios.</p>
                     <button>Saiba mais</button>
                 </C.TextField>
             </C.Container>
             <C.Container>
-                <button style={{zIndex:5}}>Prev</button>
+                <C.SlideButton 
+                    style={{
+                        left:20
+                }}>
+                    <IoMdArrowDropleftCircle/>
+                </C.SlideButton>
                 <C.SlideField>
                     <C.SlideBox>
 
@@ -44,7 +59,12 @@ const Highlights = () => {
                         
                     </C.SlideBox>
                 </C.SlideField>
-                <button style={{zIndex:5}}>Next</button>
+                <C.SlideButton 
+                    style={{
+                        right:20
+                }}>
+                    <IoMdArrowDroprightCircle/>
+                </C.SlideButton>
             </C.Container>
         </C.Main>
     )

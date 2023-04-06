@@ -14,6 +14,7 @@ export const Main = styled.main`
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        min-height: calc(85vh - 100px);
     }
 `
 
@@ -28,6 +29,7 @@ export const Container = styled.div`
 
     @media(max-width: 840px){
         width: 100%;
+        min-height: calc(85vh - 100px);
     }
 `
 export const TextField = styled.div`
@@ -45,6 +47,15 @@ export const TextField = styled.div`
     }
 `
 
+export const Logo = styled.img`
+    margin-top: -100px;
+    width:350px;
+
+    @media(max-width: 840px){
+        margin-top: -50px;
+    }
+`
+
 export const SlideField = styled.div`
     align-items: center;
     display: flex;
@@ -53,7 +64,9 @@ export const SlideField = styled.div`
     overflow: hidden;
 
     @media(max-width: 840px){
-        margin-top: 45vh;
+        position: absolute;
+        bottom: 100px;
+        left: auto;
         width: 70%;
     }
 `
@@ -69,6 +82,24 @@ export const SlideBox = styled.div`
         min-height: 35vh;
         min-width: 70vw;
         margin-bottom: 2rem;
+    }
+`
+
+export const SlideButton = styled.button`
+    background: none;
+    border: none;
+    font-size: 3rem;
+    margin: 0;
+    padding:0;
+    z-index: 5;
+
+    svg{
+        color: var(--cor-yellow);
+    }
+
+    @media(max-width: 840px){
+        position: absolute;
+        bottom: 210px;
     }
 `
 
