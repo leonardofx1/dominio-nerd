@@ -16,6 +16,10 @@ export const Container = styled.div`
         left: 100px;
         background: var(--cor-dark);
         color: var(--cor-light);
+
+        @media(max-width: 840px){
+            left: 40px;
+        }
     }
 
     ::after{
@@ -29,5 +33,12 @@ export const Container = styled.div`
         padding: .5rem 4rem;
         font-size: 2rem;
         font-weight: bold;
+
+        @media(max-width: 840px){
+            font-size: 1.5rem;
+            padding: .2rem 3rem;
+            left: 40px;
+            top:57px
+        }
     }
 `
