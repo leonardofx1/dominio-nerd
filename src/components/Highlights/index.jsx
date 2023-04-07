@@ -49,13 +49,13 @@ const Highlights = () => {
                     <IoMdArrowDropleftCircle/>
                 </C.SlideButton>
                 <C.SlideField>
-                    <C.SlideBox>
+                    <C.SlideBox style={{background: 'red'}}>
 
                     </C.SlideBox>
-                    <C.SlideBox>
+                    <C.SlideBox style={{background: 'blue'}}>
                         
                     </C.SlideBox>
-                    <C.SlideBox>
+                    <C.SlideBox style={{background: 'yellow'}}>
                         
                     </C.SlideBox>
                 </C.SlideField>
