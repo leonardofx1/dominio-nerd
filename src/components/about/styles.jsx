@@ -42,3 +42,18 @@ export const Container = styled.div`
         }
     }
 `
+
+export const CardField = styled.div`
+    display:flex;
+    position: absolute;
+    top: 150px;
+    left: 190px;
+
+    @media(max-width: 840px){
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 120px;
+    }
+`
