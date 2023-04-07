@@ -33,7 +33,7 @@ export const Menu = styled.ul`
         height: 100%;
         justify-content: start;
         opacity: .95;
-        padding: 1rem 0;
+        padding: 1rem 2rem;
         position: absolute;
         right: 0;
         top: 80px;
