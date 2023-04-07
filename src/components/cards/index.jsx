@@ -1,4 +1,5 @@
 import react from 'react'
+import { BiCartAdd } from 'react-icons/bi'
 
 import * as C from './styles'
 
@@ -18,7 +19,7 @@ const Card = ({ image, title, text, btnText, textLink }) => {
                     {text}
                 </p>
                 {btnText ?
-                    <C.Btn>{btnText}</C.Btn>:
+                    <C.Btn><BiCartAdd/> {btnText}</C.Btn>:
                     <C.TextLink>{textLink}</C.TextLink>}
             </C.TextField>
         </C.Container>

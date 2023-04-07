@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from '../components/header'
+import Products from '../components/products'
 
-const Products = () => {
+const ProductsPage = () => {
     return(
         <>
             <Header/>
+            <Products/>
         </>
     )
 }
 
-export default Products
+export default ProductsPage

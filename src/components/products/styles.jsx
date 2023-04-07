@@ -23,7 +23,7 @@ export const Container = styled.div`
     }
 
     ::after{
-        content:'Sobre o Jogo';
+        content:'Produtos';
         position: absolute;
         height: 40px;
         top: 47px;
