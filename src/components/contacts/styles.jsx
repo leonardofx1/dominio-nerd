@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import HQArt2 from '/hq.bg02.png'
 
 export const Container = styled.div`
     background: var(--cor-light);
@@ -7,8 +8,9 @@ export const Container = styled.div`
 `
 
 export const TopBackgroundField = styled.div`
-    
-
+    background: url(${HQArt2});
+    min-height: 40vh;
+    min-width: 100%;
 `
 
 export const InfosField = styled.div`
