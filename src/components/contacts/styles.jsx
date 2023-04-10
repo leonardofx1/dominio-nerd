@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const TopBackgroundField = styled.div`
     background: url(${HQArt2});
+    background-size: cover;
     min-height: 40vh;
     min-width: 100%;
 `

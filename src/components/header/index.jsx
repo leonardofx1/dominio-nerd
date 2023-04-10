@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { BiCartAdd } from 'react-icons/bi'
 import {
     CgMenuRound,
     CgCloseO
@@ -8,14 +9,14 @@ import { Link } from 'react-router-dom'
 import * as C from './styles'
 
 const Header = () => {
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(false)
+    const [cartItens, setCartItens] = useState(0)
     return(
         <C.Nav>
             
                 <C.Title> 
                     Dominio Nerd
                 </C.Title>
-            
             
                 <C.Menu showMenu={showMenu}>
                     <Link
@@ -60,7 +61,6 @@ const Header = () => {
                     </Link>
                 </C.Menu>
             
-
             <C.ButtonMenu
                 onClick={() => setShowMenu(!showMenu)}
             >
@@ -86,6 +86,7 @@ const Header = () => {
                         </CgMenuRound>}
                 </C.IconMenu>
             </C.ButtonMenu>
+
         </C.Nav>
     )
 }
