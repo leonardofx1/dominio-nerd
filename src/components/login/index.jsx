@@ -4,7 +4,10 @@ import * as C from './styled'
 
 const Login = () => {
     return (
-        <div></div>
+        <div>
+            <div>Login</div>
+            <div>Cadastre-se</div>
+        </div>
     )
 }
 
