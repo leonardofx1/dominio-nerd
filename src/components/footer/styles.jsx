@@ -29,9 +29,18 @@ export const QuickLinks = styled.div`
 export const Contact = styled.div`
     position: relative;
     display: inline-block;
+
+    svg{
+        width: 20px;
+        height: 20px;
+    }
 `
 
-export const CopyRightText = styled.div``
+export const CopyRightText = styled.div`
+    border-top: 2px solid var(--cor-yellow);
+    padding-top: 1rem;
+    text-align: center;
+`
 
 export const Title = styled.h2`
     position: relative;
@@ -53,11 +62,6 @@ export const ListItem = styled.li`
 export const ALink = styled.a`
     color: var(--cor-yellow);
 
-    svg{
-        width: 36px;
-        height: 36px;
-    }
-    
     :hover{
         color: var(--cor-light);
     }
