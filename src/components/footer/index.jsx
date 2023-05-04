@@ -3,13 +3,15 @@ import {
     RiWhatsappFill,
     RiInstagramLine,
     RiPhoneFill,
-    RiMailLine
+    RiMailLine,
+    RiCopyrightLine
 } from 'react-icons/ri'
 
 import * as C from './styles'
 
 const Footer = () => {
     return(
+        <C.Container>
         <C.Footer>
             <C.AboutUs>
                 <h2>About Us</h2>
@@ -47,6 +49,11 @@ const Footer = () => {
                 </ul>
             </C.Contact>
         </C.Footer>
+        <C.CopyRightText>
+            <p><RiCopyrightLine/>Marcio Dias. Para informações e orçamentos: <a href='#'><RiWhatsappFill/></a> <a href='#'><RiInstagramLine/></a>
+            </p>
+        </C.CopyRightText>
+        </C.Container>
     )
 }
 
