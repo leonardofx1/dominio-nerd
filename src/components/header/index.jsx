@@ -4,6 +4,7 @@ import {
     CgMenuRound,
     CgCloseO
 } from 'react-icons/cg'
+import Logo from '/LogoTitle.png'
 import { Link } from 'react-router-dom'
 
 import * as C from './styles'
@@ -13,10 +14,12 @@ const Header = () => {
     const [cartItens, setCartItens] = useState(0)
     return(
         <C.Nav>
-            
-                <C.Title> 
-                    Dominio Nerd
-                </C.Title>
+            <Link
+                style={{textDecoration:'none'}} 
+                to='/'
+            >
+                <C.Logo src={Logo} />
+            </Link>
             
                 <C.Menu showMenu={showMenu}>
                     <Link

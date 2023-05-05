@@ -13,9 +13,9 @@ export const Nav = styled.nav`
 `
 export const Container = styled.div``
 
-export const Title = styled.h2`
-    color: var(--cor-yellow);
-    text-transform: uppercase;
+export const Logo = styled.img`
+    margin-left: -1rem;
+    width: 150px;
 `
 
 export const Menu = styled.ul`

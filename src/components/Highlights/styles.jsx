@@ -45,6 +45,10 @@ export const TextField = styled.div`
         width: 90%;
     }
 `
+export const LogoIcon = styled.img`
+    margin-left: -1rem;
+    width: 150px;
+`
 
 export const Logo = styled.img`
     margin-top: -100px;

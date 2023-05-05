@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {
     IoMdArrowDroprightCircle,
@@ -15,6 +15,12 @@ import { useState } from 'react'
 const Highlights = () => {
 
     const [responsiveWidth, setResponsiveWidth] = useState(window.innerWidth)
+
+    useEffect(()=>{
+        const handleResize = () => setResponsiveWidth(window.innerWidth)
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     return (
         <C.Main>

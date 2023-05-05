@@ -8,15 +8,22 @@ import {
 } from 'react-icons/ri'
 
 import Logo from '/LogoTitle.png'
+import { Link } from 'react-router-dom'
 
 import * as C from './styles'
+
 
 const Footer = () => {
     return(
         <C.Container>
         <C.Footer>
             <C.AboutUs>
-                <C.Logo src={Logo} />
+                <Link
+                    style={{textDecoration:'none'}} 
+                    to='/'
+                >
+                    <C.Logo src={Logo} />
+                </Link>
                 <p>
                 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
