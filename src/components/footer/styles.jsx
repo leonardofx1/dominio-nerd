@@ -19,7 +19,8 @@ export const Footer = styled.footer`
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 2rem;
 `
-export const AboutUs = styled.div``
+export const AboutUs = styled.div`
+`
 
 export const QuickLinks = styled.div`
     position: relative;
@@ -40,6 +41,10 @@ export const CopyRightText = styled.div`
     border-top: 2px solid var(--cor-yellow);
     padding-top: 1rem;
     text-align: center;
+`
+export const Logo = styled.img`
+    margin-left: -1rem;
+    width: 150px;
 `
 
 export const Title = styled.h2`

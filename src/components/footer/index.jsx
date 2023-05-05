@@ -7,6 +7,8 @@ import {
     RiCopyrightLine
 } from 'react-icons/ri'
 
+import Logo from '/LogoTitle.png'
+
 import * as C from './styles'
 
 const Footer = () => {
@@ -14,7 +16,7 @@ const Footer = () => {
         <C.Container>
         <C.Footer>
             <C.AboutUs>
-                <C.Title>About Us</C.Title>
+                <C.Logo src={Logo} />
                 <p>
                 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
@@ -49,7 +51,7 @@ const Footer = () => {
             </C.Contact>
         </C.Footer>
         <C.CopyRightText>
-            <p>Copyright <RiCopyrightLine/> 2023 Dominio Nerd. All Rights Reserved. By <C.ALink href='tel:+5522999424224' style={{ color: 'var(--cor-light)' }} >Marcio Dias.</C.ALink> <C.ALink href='#'><RiWhatsappFill/></C.ALink> <C.ALink href='#'><RiInstagramLine/></C.ALink>
+            <p>Copyright <RiCopyrightLine/> 2023 Dominio Nerd. All Rights Reserved. By <C.ALink href='tel:+5522999424224'>Marcio Dias.</C.ALink> <C.ALink href='#'><RiWhatsappFill/></C.ALink> <C.ALink href='#'><RiInstagramLine/></C.ALink>
             </p>
         </C.CopyRightText>
         </C.Container>
