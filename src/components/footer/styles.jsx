@@ -7,7 +7,7 @@ export const Container = styled.div`
     min-height: 30vh;
     background: var(--cor-gray);
     color: var(--cor-yellow);
-    padding: 5rem;
+    padding: 2rem 1rem;
 `
 
 export const Footer = styled.footer`
@@ -18,6 +18,14 @@ export const Footer = styled.footer`
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 2rem;
+
+    @media (max-width: 840px){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 `
 export const AboutUs = styled.div`
 `
@@ -25,16 +33,12 @@ export const AboutUs = styled.div`
 export const QuickLinks = styled.div`
     position: relative;
     display: inline-block;
+    
 `
 
 export const Contact = styled.div`
     position: relative;
     display: inline-block;
-
-    svg{
-        width: 20px;
-        height: 20px;
-    }
 `
 
 export const CopyRightText = styled.div`

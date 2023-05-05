@@ -14,7 +14,6 @@ export const Main = styled.main`
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        min-height: 60vh;
     }
 `
 
@@ -24,12 +23,12 @@ export const Container = styled.div`
     color: var(--cor-light);
     display: flex;
     justify-content: center;
+    min-height: calc(100vh - 100px);
     width: 50%;
     overflow: hidden;
 
     @media(max-width: 840px){
         width: 100%;
-        min-height:60vh;
     }
 `
 export const TextField = styled.div`

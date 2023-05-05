@@ -10,8 +10,12 @@ import MiniBotton from '/mini-wonderwoman.svg'
 import MiniTop from '/mini-thor.svg'
 
 import * as C from './styles'
+import { useState } from 'react'
 
 const Highlights = () => {
+
+    const [responsiveWidth, setResponsiveWidth] = useState(window.innerWidth)
+
     return (
         <C.Main>
             <C.Mini
@@ -41,6 +45,7 @@ const Highlights = () => {
                     <button>Saiba mais</button>
                 </C.TextField>
             </C.Container>
+            {responsiveWidth > 840 &&
             <C.Container>
                 <C.SlideButton 
                     style={{
@@ -65,7 +70,7 @@ const Highlights = () => {
                 }}>
                     <IoMdArrowDroprightCircle/>
                 </C.SlideButton>
-            </C.Container>
+            </C.Container>}
         </C.Main>
     )
 }
