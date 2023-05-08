@@ -15,7 +15,19 @@ export const Container = styled.section`
     border-radius: 15px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 0 2rem;
-    min-height: 400px;
+    height: 400px;
     min-width: 40%;
+    padding: 0 3.5rem;
+`
+export const Title = styled.h2`
+    margin-bottom: 2rem;
+`
+
+export const FieldContainer = styled.div`
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 `

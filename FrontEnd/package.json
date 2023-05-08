@@ -5,12 +5,14 @@
     "start": "vite"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "styled-components": "^6.0.0-rc.1",
-    "vite": "^4.3.5"
+    "vite": "^4.3.5",
+    "yup": "^1.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0"
