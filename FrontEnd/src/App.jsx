@@ -16,6 +16,9 @@ function App() {
         <Route path='/produtos' element={<ProductsPage />} />
         <Route path='/contatos' element={<ContactsPage />} />
         <Route path='/login' element={<LoginPage />} />
+        {/* <Route path='/cadastrar' element={<NewUserPage />} />
+        <Route path='/adm' element={<AdmPage />} />
+        <Route path='/carrinho' element={<CartPage />} /> */}
       </Routes>
     </BrowserRouter>
   )
