@@ -9,9 +9,9 @@ export const Nav = styled.nav`
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
-    z-index: 99;
-    margin-bottom: .5rem;
+    z-index: 99; 
 `
+
 export const Container = styled.div``
 
 export const Logo = styled.img`
