@@ -5,7 +5,7 @@ import {
     Field
 } from 'formik'
 
-import * as C from './styled'
+import * as C from './styles'
 
 const Login = () => {
     return (
