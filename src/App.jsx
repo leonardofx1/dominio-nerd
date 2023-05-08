@@ -5,6 +5,7 @@ import AboutGame from './pages/about-game'
 import Home from './pages/home'
 import ContactsPage from './pages/contacts'
 import ProductsPage from './pages/products'
+import LoginPage from './pages/login'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/sobre' element={<AboutGame />} />
         <Route path='/produtos' element={<ProductsPage />} />
         <Route path='/contatos' element={<ContactsPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   )
