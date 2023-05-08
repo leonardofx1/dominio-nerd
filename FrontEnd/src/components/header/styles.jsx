@@ -7,9 +7,10 @@ export const Nav = styled.nav`
     display: flex;
     height: 100px;
     justify-content: space-between;
-    padding: 2rem;
-    width: 100vw;
+    padding: 1rem;
+    width: 100%;
     z-index: 99;
+    margin-bottom: .5rem;
 `
 export const Container = styled.div``
 

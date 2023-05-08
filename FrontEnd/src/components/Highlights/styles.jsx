@@ -6,9 +6,12 @@ export const Main = styled.main`
     background: url(${backgroundPage});
     background-size: cover;
     display: flex;
-    min-height: calc(100vh - 100px);
+    height: 100%;
     position: relative;
-    width: 100vw;
+    width: 100%;
+    margin: 0 0 5px 0;
+    justify-content: space-between;
+    max-height: auto;
 
     @media(max-width: 840px){
         align-items: center;
@@ -23,7 +26,7 @@ export const Container = styled.div`
     color: var(--cor-light);
     display: flex;
     justify-content: center;
-    min-height: calc(100vh - 100px);
+    height:100%;
     width: 50%;
     overflow: hidden;
 
@@ -32,30 +35,31 @@ export const Container = styled.div`
     }
 `
 export const TextField = styled.div`
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 80px;
+
     text-align: center;
     width: 40%;
     
     @media(max-width: 840px){
-        top:10px;
-        width: 90%;
+       width: 100%;
+       padding:1em;
+       font-weight: bold;
     }
 `
 export const LogoIcon = styled.img`
-    margin-left: -1rem;
+
     width: 150px;
 `
 
 export const Logo = styled.img`
-    margin-top: -100px;
+    margin-top: -50px;
     width:350px;
 
     @media(max-width: 840px){
-        margin-top: -50px;
+     width: 85%;
     }
 `
 
