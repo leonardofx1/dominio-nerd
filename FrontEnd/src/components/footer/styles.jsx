@@ -21,7 +21,6 @@ export const Footer = styled.footer`
 
     @media (max-width: 840px){
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -31,8 +30,7 @@ export const AboutUs = styled.div`
 `
 
 export const QuickLinks = styled.div`
-    position: relative;
-    display: inline-block;
+    width: 200px
     
 `
 
