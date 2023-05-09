@@ -15,7 +15,7 @@ const Dashboard = () => {
                 </ul>
             </C.MenuContainer>
             <C.DashboardField>
-                <h1 style={{ textAlign: 'center' }}>Cadastro de produtos</h1>
+                <C.Title>Cadastro de produtos</C.Title>
 
                 <C.Container>
                 <h2>
@@ -27,6 +27,8 @@ const Dashboard = () => {
                             <span>Nome do Produto:</span>
                             <Field />
                             <span>Edição:</span>
+                            <Field />
+                            <span>Url de imagem do produto:</span>
                             <Field />
                             <span>Estoque:</span>
                             <Field />
