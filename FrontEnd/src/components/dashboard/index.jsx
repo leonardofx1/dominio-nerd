@@ -7,13 +7,14 @@ const Dashboard = () => {
     return(
         <C.Main>
             <C.MenuContainer>
-                <ul>
-                    <li>Cadastrar de Produtos</li>
-                    <li>Pedidos Pendentes</li>
-                    <li>Estoque</li>
-                    <li>Histórico de Vendas</li>
-                </ul>
+                <C.List>
+                    <C.ItemList>Cadastrar de Produtos</C.ItemList>
+                    <C.ItemList>Pedidos Pendentes</C.ItemList>
+                    <C.ItemList>Estoque</C.ItemList>
+                    <C.ItemList>Histórico de Vendas</C.ItemList>
+                </C.List>
             </C.MenuContainer>
+
             <C.DashboardField>
                 <C.Title>Cadastro de produtos</C.Title>
 

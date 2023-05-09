@@ -10,6 +10,7 @@ export const MenuContainer = styled.section`
     color: var(--cor-light);
     width: 20%;
     padding: 2rem;
+    padding-right: 0;
 `
 export const DashboardField = styled.section`
     align-items: center;
@@ -42,4 +43,21 @@ export const FieldContainer = styled.div`
 export const Title = styled.h1`
     font-size: 3rem;
     text-align: center;
+`
+
+export const List = styled.ul`
+    list-style: none;
+
+    :hover{
+        background: var(--cor-yellow);
+        cursor: pointer;
+        font-size: 1.3rem;
+    }
+`
+
+export const ItemList = styled.li`
+    border-radius: 15px 0 0 15px;
+    padding: 1rem;
+    margin: .5rem 0;
+    text-transform: uppercase;
 `
