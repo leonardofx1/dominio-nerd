@@ -49,13 +49,13 @@ const Footer = () => {
                     <C.ListItem><C.ALink href='#'>Calendário de jogos</C.ALink></C.ListItem>
                 </C.List>
             </C.QuickLinks>
-            <C.Contact>
+            <div>
                 <C.Title>Contatos</C.Title>
                 <C.List>
                     <C.ListItem><C.ALink href='tel:+5522999424224'><RiPhoneFill style={{ marginRight:10 , width: 20, height:20 }}/> +5522 99543-5269</C.ALink></C.ListItem>
                     <C.ListItem><C.ALink href='mailto:marcio.b.a.dias@gmail.com'><RiMailLine style={{ marginRight:10 , width: 20, height:20 }}/>contato@dominionerd.com</C.ALink></C.ListItem>
                 </C.List>
-            </C.Contact>
+            </div>
         </C.Footer>
         <C.CopyRightText>
             <p>Copyright <RiCopyrightLine/> 2023 Dominio Nerd. All Rights Reserved. By <C.ALink href='tel:+5522999424224'>Marcio Dias.</C.ALink> <C.ALink href='#'><RiWhatsappFill/></C.ALink> <C.ALink href='#'><RiInstagramLine/></C.ALink>

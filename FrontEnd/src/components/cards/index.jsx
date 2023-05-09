@@ -11,10 +11,12 @@ const Card = ({ image, title, text, btnText, textLink }) => {
 
     return(
         <C.Container>
-            <C.ImgCard 
+           <C.ContainerImg>
+           <C.ImgCard 
                 src={image} 
                 alt='Imagem do card'
             />
+           </C.ContainerImg>
             <C.TextField>
                 <h3>
                     {title}
