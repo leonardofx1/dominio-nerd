@@ -1,13 +1,17 @@
 import React from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Dashboard from '../components/dashboard'
+import MenuDashboard from '../components/dashboard/menu-dashboard'
+import RegisterProducts from '../components/dashboard/register-products'
 
 const DashboardPage = () => {
     return(
         <>
             <Header/>
-            <Dashboard/>
+            <div style={{ display: 'flex' }} >
+                <MenuDashboard/>
+                <RegisterProducts/>
+            </div>
             <Footer/>
         </>
     )
