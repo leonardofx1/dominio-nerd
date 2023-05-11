@@ -13,8 +13,7 @@ export const List = styled.ul`
 
     :hover{
         background: var(--cor-yellow);
-        cursor: pointer;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 `
 
@@ -23,4 +22,7 @@ export const ItemList = styled.li`
     padding: 1rem;
     margin: .5rem 0;
     text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    color:white;
 `

@@ -29,7 +29,7 @@ const RegisterProducts = () => {
                             <span>Valor:</span>
                             <Field />
                         </C.FieldContainer>
-                        <button>Cadastrar</button>
+                        <C.BtnForm>Cadastrar</C.BtnForm>
                     </Form>
                 </Formik>
             </C.Container>
