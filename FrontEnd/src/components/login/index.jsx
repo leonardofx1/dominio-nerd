@@ -17,29 +17,31 @@ const Login = () => {
                 <Formik>
                     <Form>
                         <C.FieldContainer>
-                            <span>Nome de Usuário:</span>
+                            <C.Entrega>
+                            <label>Nome de Usuário:</label>
                             <Field />
-                            <span>E-mail:</span>
+                            <label>E-mail:</label>
                             <Field />
-                            <span>Senha:</span>
+                            <label>Senha:</label>
                             <Field />
-                            <span>Confirme sua senha:</span>
+                            <label>Confirme sua senha:</label>
                             <Field />
-                            <span>Celular:</span>
-                            <Field />
-                            <div>
+                            <label>Celular:</label>
+                            <Field />,
+                            </C.Entrega>
+                            <C.Entrega>
                                 <h3>Dados de entrega</h3>
-                                <span>Endereço:</span>
+                                <label>Endereço:</label>
                                 <Field />
-                                <span>Complemento:</span>
+                                <label>Complemento:</label>
                                 <Field />
-                                <span>Bairro:</span>
+                                <label>Bairro:</label>
                                 <Field />
-                                <span>Cidade:</span>
+                                <label>Cidade:</label>
                                 <Field />
-                                <span>Estado:</span>
+                                <label>Estado:</label>
                                 <Field />
-                            </div>
+                            </C.Entrega>
                         </C.FieldContainer>
                         <button>Cadastrar</button>
                     </Form>
@@ -53,10 +55,10 @@ const Login = () => {
                 <Formik>
                     <Form>
                         <C.FieldContainer>
-                            <span>Nome de Usuário:</span>
-                            <Field />
-                            <span>Senha:</span>
-                            <Field />
+                            <label>Nome de Usuário:
+                            <Field /></label>
+                            <label>Senha:
+                            <Field /></label>
                         </C.FieldContainer>
                         <button>Entrar</button>
                     </Form>
