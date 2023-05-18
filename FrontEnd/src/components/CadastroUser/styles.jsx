@@ -7,11 +7,12 @@ export const Main = styled.main`
     min-height: calc(100vh - 100px);
     justify-content: center;
     padding: 2rem;
+    
 `
 
 export const Container = styled.section`
     align-items: center;
-    background: var(--cor-light);
+    background: #ffffff2d;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -19,6 +20,7 @@ export const Container = styled.section`
     margin: 0 2rem;
     height: auto;
     min-width: 40%;
+    
     & form {
         width: 80%;
         display: flex;
@@ -26,10 +28,7 @@ export const Container = styled.section`
         justify-content: center;
         align-items: center;
     }
-    & form button {
-        width: 200px;
-        margin: 1rem auto;
-    }
+   
 `
 export const Title = styled.h2`
     margin: 2rem;
@@ -42,6 +41,8 @@ export const FieldContainer = styled.div`
     flex-direction: column;
     width: 100%;
     text-align: start;
+    font-weight: 500;
+    font-family: sans-serif;
     gap: 10px;
     & label {
         display: flex;
@@ -55,9 +56,9 @@ export const FieldContainer = styled.div`
         }
     }
     & input {
-        width:250px;
+        width:280px;
         margin-left: 1rem;
-        padding:.5em;
+        padding:.8em;
         border-radius: 5px;
         border: none;
         box-shadow: 1px 1px 5px black;
@@ -73,12 +74,26 @@ export const Entrega = styled.div `
     flex-direction: column;
     gap:10px;
     & input{
-        width:200px;
+        width:280px;
         margin-left: 1rem;
-        padding:.5em;
+        padding:.8em;
         border-radius: 5px;
         border: none;
         box-shadow: 1px 1px 5px black;
         outline:none;
     }
+`
+
+export const Btn = styled.button `
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    background-color:#fe502d;
+    font-weight: bold;
+    color: white;
+    font-size:1.3rem;
+    box-shadow: 1px 1px 10px white;
+    margin: 1em;
+    
 `
