@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Field, Form, Formik } from 'formik'
 
 import * as C from './styles'
 

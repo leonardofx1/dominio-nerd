@@ -7,17 +7,17 @@ const  Login = () =>  {
     <C.Title>
         Login
     </C.Title>
-    <Formik>
-        <Form>
+    <div>
+        <form>
             <C.FieldContainer>
                 <label>Nome de Usuário:
-                <Field /></label>
+                </label>
                 <label>Senha:
-                <Field /></label>
+                </label>
             </C.FieldContainer>
             <button>Entrar</button>
-        </Form>
-    </Formik>
+        </form>
+    </div>
 </C.Container>
   )
 }

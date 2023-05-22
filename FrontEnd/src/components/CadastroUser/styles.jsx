@@ -92,7 +92,7 @@ export const Btn = styled.button `
     background-color:#fe502d;
     font-weight: bold;
     color: white;
-    font-size:1.3rem;
+    font-size:1.3arem;
     box-shadow: 1px 1px 10px white;
     margin: 1em;
     
