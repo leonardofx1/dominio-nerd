@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Field, Form, Formik } from 'formik'
 
 import * as C from './styles'
 
@@ -29,7 +28,7 @@ const RegisterProducts = () => {
                             <span>Valor:</span>
                             <Field />
                         </C.FieldContainer>
-                        <button>Cadastrar</button>
+                        <C.BtnForm>Cadastrar</C.BtnForm>
                     </Form>
                 </Formik>
             </C.Container>

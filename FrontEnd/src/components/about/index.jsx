@@ -5,6 +5,8 @@ import * as C from './styles'
 import Card from '../cards'
 
 const About = () => {
+    const oi = 'po'
+    console.log(oi)
     return(
         <C.Container>
             <C.CardField>
