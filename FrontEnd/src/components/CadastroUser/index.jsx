@@ -32,6 +32,7 @@ const CadastroUser = () => {
                         <C.FieldContainer>
                             <C.Entrega>
                             <Input nameInput='nameUser' type='text'  label='Nome de Usuário:' register={register}/>
+                            {errors?.nameUser?.message && <p> {errors.nameUser.message}</p>}
                             <Input nameInput='email' type='text' label='E-mail:' register={register} />
                             {errors?.email?.message && <p> {errors.email.message}</p>}
                             <Input nameInput='password' type='password' label='Senha:' register={register} />

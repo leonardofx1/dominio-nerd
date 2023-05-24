@@ -73,6 +73,11 @@ export const Entrega = styled.div `
     flex-wrap: wrap;
     flex-direction: column;
     gap:10px;
+    & p {
+        color:red;
+        font-size: small;
+        margin-left: 1rem;
+    }
     & input{
         width:280px;
         margin-left: 1rem;
