@@ -110,7 +110,7 @@ const Header = () => {
                     to='/login'
                 >
                     <div style={{ 
-                        color: 'var(--cor-yellow)', 
+                        color: `${(props)=> props.theme.colors.colorYellow}`, 
                         display: 'flex', 
                         alignItems: 'center', 
                         justifyContent: 'center', 
