@@ -5,8 +5,8 @@ export const Container = styled.div`
     justify-content: end;
     align-items: end;
     min-height: 30vh;
-    background: var(--cor-gray);
-    color: var(--cor-yellow);
+    background: ${({theme} ) => theme.colors.colorGray};
+    color: ${({theme} ) => theme.colors.colorYellow};
     padding: 2rem 1rem;
 `
 
@@ -36,7 +36,7 @@ export const QuickLinks = styled.div`
 
 
 export const CopyRightText = styled.div`
-    border-top: 2px solid var(--cor-yellow);
+    border-top: 2px solid ${({theme} ) =>theme.colors.colorYellow};
     padding-top: 1rem;
     text-align: center;
 `
@@ -63,9 +63,9 @@ export const ListItem = styled.li`
 `
 
 export const ALink = styled.a`
-    color: var(--cor-yellow);
+    color: ${({theme}) => theme.colors.colorYellow };
 
     :hover{
-        color: var(--cor-light);
+        color: ${({theme} ) => theme.colors.colorLight};
     }
 `

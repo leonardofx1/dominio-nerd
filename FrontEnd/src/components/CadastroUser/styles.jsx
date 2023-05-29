@@ -12,17 +12,17 @@ export const Main = styled.main`
 
 export const Container = styled.section`
     align-items: center;
-    background: #ffffff2d;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 2rem;
     height: auto;
-    min-width: 40%;
+    width:50%;
+   
     
     & form {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,8 +31,10 @@ export const Container = styled.section`
    
 `
 export const Title = styled.h2`
-    margin: 2rem;
-    color: ${(props) => props.theme.colors.colorGray}
+    align-self: flex-start;
+    width: 100%;
+    color: ${(props) => props.theme.colors.colorGray};
+    border: 1px solid black;
 `
 
 export const FieldContainer = styled.div`
@@ -42,9 +44,7 @@ export const FieldContainer = styled.div`
     flex-direction: column;
     width: 100%;
     text-align: start;
-    font-weight: 500;
     font-family: sans-serif;
-    gap: 10px;
     & label {
         display: flex;
         width: 70%;
@@ -72,8 +72,10 @@ export const Entrega = styled.div `
     display: flex;
     height: auto;
     flex-wrap: wrap;
-    flex-direction: column;
     gap:10px;
+    width: 100%;
+    border: 1px solid black;
+    padding:1rem;
     & p {
         color:red;
         font-size: small;
@@ -95,10 +97,10 @@ export const Btn = styled.button `
     justify-content: space-evenly;
     align-items: center;
     width: 200px;
-    background-color:#fe502d;
+    background-color:${({theme}) => theme.colors.colorOrange};
     font-weight: bold;
     color: white;
-    font-size:1.3arem;
+    font-size:1.3rem;
     box-shadow: 1px 1px 10px white;
     margin: 1em;
     

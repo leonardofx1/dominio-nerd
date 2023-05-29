@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background:  ${(props) => props.theme.colorLight};
+    background:  ${({theme} ) => theme.colorLight};
     display: flex;
     min-height: calc(100vh - 100px);
     position: relative;
@@ -14,8 +14,8 @@ export const Container = styled.div`
         height: 5px;
         top: 100px;
         left: 100px;
-        background:${(props) => props.theme.colors.colordark};
-        color: ${(props) => props.theme.colorLight};
+        background:${({theme} ) => theme.colors.colordark};
+        color: ${({theme} ) => theme.colorLight};
 
         @media(max-width: 840px){
             left: 40px;
@@ -28,7 +28,7 @@ export const Container = styled.div`
         height: 40px;
         top: 47px;
         left: 100px;
-        background: ${(props) => props.theme.colors.colorDark };
+        background: ${({theme} ) => theme.colors.colorDark };
         color: var(--cor-light);
         padding: .5rem 4rem;
         font-size: 2rem;

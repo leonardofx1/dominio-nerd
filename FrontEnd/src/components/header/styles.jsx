@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
     align-items: center;
-    background: ${(props) => props.theme.colors.colorGray};
+    background: ${({theme} ) =>  theme.colors.colorGray};
     display: flex;
     height: 100px;
     justify-content: space-between;
@@ -27,7 +27,7 @@ export const Menu = styled.ul`
     height: auto;
 
     @media (max-width:840px){
-        background: ${(props) => props.theme.colors.colorGray};
+        background: ${({theme} ) =>  theme.colors.colorGray};
         backdrop-filter: blur(3px);
         display: ${({ showMenu }) => (showMenu ? 'flex' : 'none')};
         flex-direction: column;
@@ -51,14 +51,14 @@ export const ItemMenu = styled.li`
 `
 export const LinkItem = styled.a`
 
-    color: ${(props) => props.theme.colors.colorYellow};
+    color: ${({theme} ) =>  theme.colors.colorYellow};
     cursor: pointer;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: capitalize;
 
     :hover{
-        color:  ${(props) => props.theme.colors.colorLight};
+        color:  ${({theme} ) =>  theme.colors.colorLight};
         font-size: 1.2rem;
     }
 `
@@ -75,13 +75,13 @@ export const ButtonMenu = styled.div`
 `
 export const IconMenu = styled.i`
     svg{
-        color:  ${(props) => props.theme.colors.colorYellow};
+        color:  ${({theme} ) =>  theme.colors.colorYellow};
         height: 40px;
         width: 40px;
     }
 
     :hover{
-        color: ${(props) => props.theme.colors.colorLight};
+        color: ${({theme} ) =>  theme.colors.colorLight};
         cursor: pointer;
     }
 `
