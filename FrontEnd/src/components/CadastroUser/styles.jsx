@@ -91,6 +91,35 @@ export const Entrega = styled.div `
         outline:none;
     }
 `
+export const CadastroType = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+    & p {
+        display: block;
+        background-color: red;
+        margin-right: 1rem;
+    }
+  & div {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: flex-start;
+
+    & label {
+      display: inline-block;
+      font-size: 0.9rem;
+      width: 125px;
+      margin:0;
+      max-width: auto;
+      & input {
+        width: 15px; 
+        margin: 0 5px 0 0;
+      }
+    }
+
+  }
+`
 
 export const Btn = styled.button `
     display: flex;

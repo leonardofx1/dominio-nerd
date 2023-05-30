@@ -9,7 +9,7 @@ function UserForm({register, errors}) {
          {errors.email?.message && <p> {errors.email.message}</p>}
        </div>
      <div>
-     <Input nameInput='consfirmEmail' type='text' label='confirme seu e-mail:' register={register} />
+     <Input nameInput='confirmEmail' type='text' label='confirme seu e-mail:' register={register} />
          {errors.confirmEmail?.message && <p> {errors.confirmEmail.message}</p>}
      </div>
         <div>
