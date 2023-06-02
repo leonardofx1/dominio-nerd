@@ -18,10 +18,6 @@ function UserForm({register, errors}) {
         </div>
         <div> <Input nameInput='confirmPassword' type='password' label='confirme sua senha:' register={register} />
          {errors.confirmPassword?.message && <p>{errors.confirmPassword.message}</p>}</div>
-         {/* <Input nameInput='nameUser' type='text'  label='Nome de Usuário:' register={register}/>
-         {errors.nameUser?.message && <p> {errors.nameUser.message}</p>} */}
-         {/* <Input nameInput='tel' type='tel' label='Celular'  register={register}/>
-         {errors.tel?.message && <p>{errors.tel.message}</p>} */}
     </>
   )
 }

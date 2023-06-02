@@ -93,12 +93,13 @@ export const Entrega = styled.div `
 `
 export const CadastroType = styled.div`
   display: flex;
-  align-items: center;
   width: 100%;
+  border: 1px solid black;
+  padding: 1rem;
     & p {
         display: block;
-        background-color: red;
         margin-right: 1rem;
+        font-weight: bold;
     }
   & div {
     display: flex;
@@ -119,6 +120,17 @@ export const CadastroType = styled.div`
     }
 
   }
+`
+
+export const DataUser =styled.div `
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    border:1px solid #00000076;
+    padding: 1rem;
+    & label{
+        margin: .5em;
+    }
 `
 
 export const Btn = styled.button `

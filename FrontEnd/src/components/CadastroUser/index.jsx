@@ -9,6 +9,7 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 
 import * as C from './styles'
 import Input from "../Input";
+import PeopleFisica from "./peopleFisica";
 
 
 const CadastroUser = () => {
@@ -67,6 +68,9 @@ const CadastroUser = () => {
 
                                 </div>
                             </C.CadastroType>
+                            <C.DataUser>
+                            <PeopleFisica register={register}  errors={errors} />
+                            </C.DataUser>
                         </C.FieldContainer>
                         <C.Btn> Avançar <AiOutlineArrowRight/></C.Btn>
                     </form>
