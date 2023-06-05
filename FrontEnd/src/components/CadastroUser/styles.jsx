@@ -18,7 +18,7 @@ export const Container = styled.section`
     flex-direction: column;
     margin: 0 2rem;
     height: auto;
-    width:50%;
+    width:55%;
    
     
     & form {
@@ -41,7 +41,7 @@ export const FieldContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction:column;
     width: 100%;
     text-align: start;
     font-family: sans-serif;
@@ -101,36 +101,54 @@ export const CadastroType = styled.div`
         margin-right: 1rem;
         font-weight: bold;
     }
-  & div {
+`
+
+export const FieldRadio = styled.div `
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 50%;
     justify-content: flex-start;
-
+    flex-direction: row-reverse;
     & label {
       display: inline-block;
       font-size: 0.9rem;
       width: 125px;
       margin:0;
       max-width: auto;
-      & input {
-        width: 15px; 
-        margin: 0 5px 0 0;
-      }
     }
-
-  }
+    & input {
+      width: 15px; 
+      margin: 0 5px 0 0;
+    }
 `
 
 export const DataUser =styled.div `
     width: 100%;
     display:flex;
+    height: 100%;
     justify-content: space-between;
-    border:1px solid #00000076;
-    padding: 1rem;
+    border:1px solid #00000068;
+    align-items: center;
     & label{
         margin: .5em;
     }
+`
+
+export const FieldContainerUser  =  styled(DataUser) `
+    border: none;
+    
+    & div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+    }
+`
+
+export const RadioContainer = styled.div `
+    display: flex;
+    flex-direction: row;
 `
 
 export const Btn = styled.button `

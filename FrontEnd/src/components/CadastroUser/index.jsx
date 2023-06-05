@@ -16,9 +16,11 @@ const CadastroUser = () => {
     const  {
       register,
       handleSubmit,
+      watch,
        formState: {errors}
     } = useForm({
         resolver: zodResolver(schema)
+
     })
 
     const handleform = (data) => console.log(data)
@@ -33,7 +35,7 @@ const CadastroUser = () => {
             
                     <form onSubmit={handleSubmit(handleform)}>
 
-                        <C.FieldContainer>
+                        <C.FieldContainer >
                             <C.Entrega>
                             <UserForm register={register} errors={errors}/>
                             </C.Entrega>
@@ -41,32 +43,22 @@ const CadastroUser = () => {
                         <C.FieldContainer>
                             <C.CadastroType>
                             <p>Tipos de cadastro :</p>
-                                <div>
-                                   
-                                 <label>
-                                    <input
-                                        type="radio"
-                                        id="pessoaFisica"
-                                        name="pessoaType"
+                                <C.FieldRadio>
+                                < Input type="radio"
+                                        label = "Pessoa Física"
+                                        nameInput="pessoaType"
                                         value="pessoaFisica"
-                                        {...register('pessoaType')}
-                                    />
-                                    Pessoa Física
-                                    </label>
-                                </div>
-                                <div>  
-                                    <label>
-                                    <input
-                                        type="radio"
-                                        id="pessoaJuridica"
-                                        name="pessoaType"
+                                        register={register}/>
+                                </C.FieldRadio>
+                                <C.FieldRadio>  
+                                    
+                                    < Input type="radio"
+                                        label = "Pessoa Jurídica"
+                                        nameInput="pessoaType"
                                         value="pessoaJuridica"
-                                        {...register('pessoaType')}
-                                    />
-                                    Pessoa Jurídica
-                                    </label>
-
-                                </div>
+                                        register={register}/>
+                                    
+                                </C.FieldRadio>
                             </C.CadastroType>
                             <C.DataUser>
                             <PeopleFisica register={register}  errors={errors} />
