@@ -34,7 +34,7 @@ export const Title = styled.h2`
     align-self: flex-start;
     width: 100%;
     color: ${(props) => props.theme.colors.colorGray};
-    border: 1px solid black;
+    border:1px solid #00000068;
 `
 
 export const FieldContainer = styled.div`
@@ -74,7 +74,7 @@ export const Entrega = styled.div `
     flex-wrap: wrap;
     gap:10px;
     width: 100%;
-    border: 1px solid black;
+    border:1px solid #00000068;
     padding:1rem;
     & p {
         color:red;
@@ -93,33 +93,39 @@ export const Entrega = styled.div `
 `
 export const CadastroType = styled.div`
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  border: 1px solid black;
+  border:1px solid #00000068;
   padding: 1rem;
     & p {
         display: block;
-        margin-right: 1rem;
+        width: 100%;
+        padding: .5rem;
         font-weight: bold;
     }
 `
 
 export const FieldRadio = styled.div `
     display: flex;
+
     align-items: center;
-    width: 50%;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    width:100%;
     & label {
-      display: inline-block;
-      font-size: 0.9rem;
-      width: 125px;
-      margin:0;
-      max-width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 30%;
     }
     & input {
-      width: 15px; 
-      margin: 0 5px 0 0;
+        display: inline-block;
+        width: 15px;
+        margin-bottom: .1rem;
     }
+   
+    
+    
+   
 `
 
 export const DataUser =styled.div `
@@ -128,27 +134,30 @@ export const DataUser =styled.div `
     height: 100%;
     justify-content: space-between;
     border:1px solid #00000068;
-    align-items: center;
     & label{
         margin: .5em;
     }
 `
 
-export const FieldContainerUser  =  styled(DataUser) `
+export const FieldContainerUser  =  styled.div `
+    display: flex;
+    justify-content: space-evenly;
     border: none;
-    
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
     & div {
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
     }
 `
 
 export const RadioContainer = styled.div `
     display: flex;
     flex-direction: row;
+    width: 100%;
 `
 
 export const Btn = styled.button `
