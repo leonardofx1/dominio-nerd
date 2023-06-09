@@ -4,11 +4,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./schema";
 import UserForm from "./UserForm";
 
+
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-import * as C from "./styles";
+import * as C from "./style/styles";
 import Input from "../Input";
-import PeopleFisica from "./peopleFisica";
+import PeopleFisica from "./PeopleFisica";
+import Address from "./Address";
 
 const CadastroUser = () => {
   const {
@@ -29,9 +31,9 @@ const CadastroUser = () => {
 
         <form onSubmit={handleSubmit(handleform)}>
           <C.FieldContainer>
-            <C.Entrega>
+            <C.UserDataContainer>
               <UserForm register={register} errors={errors} />
-            </C.Entrega>
+            </C.UserDataContainer>
           </C.FieldContainer>
           <C.FieldContainer>
             <C.CadastroType>
@@ -59,11 +61,16 @@ const CadastroUser = () => {
               </C.FieldRadio>
             </C.CadastroType>
             <C.DataUser>
-              <PeopleFisica register={register} errors={errors} />
+              <PeopleFisica Input ={Input} register={register} errors={errors} /> 
+
+            </C.DataUser>
+          </C.FieldContainer>
+         <C.FieldContainer>
+          <C.DataUser>
+          <Address Input={Input } register={register} errors={errors} />
             </C.DataUser>
           </C.FieldContainer>
           <C.Btn>
-            {" "}
             Avançar <AiOutlineArrowRight />
           </C.Btn>
         </form>

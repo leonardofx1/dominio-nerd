@@ -1,9 +1,9 @@
 import React from "react";
-import Input from "../Input";
 
-import * as C from "./styles";
 
-const PeopleFisica = ({ register, errors }) => {
+import * as C from "./style/styles";
+
+const PeopleFisica = ({ Input , register, errors }) => {
   return (
     <>
       <C.FieldContainerUser>

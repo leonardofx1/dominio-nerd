@@ -68,7 +68,7 @@ export const FieldContainer = styled.div`
    
 `
 
-export const Entrega = styled.div `
+export const UserDataContainer = styled.div `
     display: flex;
     height: auto;
     flex-wrap: wrap;
@@ -85,22 +85,28 @@ export const Entrega = styled.div `
         width:280px;
         margin-left: 1rem;
         padding:.8em;
+
         border-radius: 5px;
         border: none;
         box-shadow: 1px 1px 5px black;
+
         outline:none;
     }
 `
 export const CadastroType = styled.div`
   display: flex;
   flex-wrap: wrap;
+
   width: 100%;
-  border:1px solid #00000068;
   padding: 1rem;
+
+  border:1px solid #00000068;
+
     & p {
         display: block;
         width: 100%;
         padding: .5rem;
+
         font-weight: bold;
     }
 `
