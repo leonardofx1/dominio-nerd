@@ -2,15 +2,15 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./schema";
-import UserForm from "./UserForm";
+import UserForm from "./componentsForm/UserForm";
 
 
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-import * as C from "./style/styles";
+import * as S from "./style/styles";
 import Input from "../Input";
-import PeopleFisica from "./PeopleFisica";
-import Address from "./Address";
+import PeopleFisica from "./componentsForm/PeopleFisica";
+import Address from "./componentsForm/Address";
 
 const CadastroUser = () => {
   const {
@@ -21,24 +21,24 @@ const CadastroUser = () => {
   } = useForm({
     resolver: zodResolver(schema),
   });
-
+  
   const handleform = (data) => console.log(data);
   console.log(errors);
   return (
-    <C.Main>
-      <C.Container>
-        <C.Title>Cadastre-se</C.Title>
+    <S.Main>
+      <S.Container>
+        <S.Title>Cadastre-se</S.Title>
 
         <form onSubmit={handleSubmit(handleform)}>
-          <C.FieldContainer>
-            <C.UserDataContainer>
+          <S.FieldContainer>
+            <S.UserDataContainer>
               <UserForm register={register} errors={errors} />
-            </C.UserDataContainer>
-          </C.FieldContainer>
-          <C.FieldContainer>
-            <C.CadastroType>
+            </S.UserDataContainer>
+          </S.FieldContainer>
+          <S.FieldContainer>
+            <S.CadastroType>
               <p>Tipos de cadastro :</p>
-              <C.FieldRadio>
+              <S.FieldRadio>
                 <label htmlFor="pessoaTypeF">
                   <input
                     type="radio"
@@ -58,24 +58,24 @@ const CadastroUser = () => {
                   />
                   Pessoa Jurídica
                 </label>
-              </C.FieldRadio>
-            </C.CadastroType>
-            <C.DataUser>
+              </S.FieldRadio>
+            </S.CadastroType>
+            <S.DataUser>
               <PeopleFisica Input ={Input} register={register} errors={errors} /> 
 
-            </C.DataUser>
-          </C.FieldContainer>
-         <C.FieldContainer>
-          <C.DataUser>
+            </S.DataUser>
+          </S.FieldContainer>
+         <S.FieldContainer>
+          <S.DataUser>
           <Address Input={Input } register={register} errors={errors} />
-            </C.DataUser>
-          </C.FieldContainer>
-          <C.Btn>
-            Avançar <AiOutlineArrowRight />
-          </C.Btn>
+            </S.DataUser>
+          </S.FieldContainer>
+          <S.Btn>
+            cadastrar
+          </S.Btn>
         </form>
-      </C.Container>
-    </C.Main>
+      </S.Container>
+    </S.Main>
   );
 };
 

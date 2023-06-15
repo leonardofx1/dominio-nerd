@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../Input";
+import Input from "../../Input";
 
 function UserForm({ register, errors }) {
   return (
@@ -32,7 +32,6 @@ function UserForm({ register, errors }) {
         {errors.password?.message && <p>{errors.password.message}</p>}
       </div>
       <div>
-        {" "}
         <Input
           nameInput="confirmPassword"
           type="password"

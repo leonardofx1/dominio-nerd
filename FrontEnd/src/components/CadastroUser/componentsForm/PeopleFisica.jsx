@@ -1,12 +1,12 @@
 import React from "react";
 
 
-import * as C from "./style/styles";
+import * as S from "../style/styles";
 
 const PeopleFisica = ({ Input , register, errors }) => {
   return (
     <>
-      <C.FieldContainerUser>
+      <S.FieldContainerUser>
         <div>
           <Input
             nameInput="fullName"
@@ -49,8 +49,8 @@ const PeopleFisica = ({ Input , register, errors }) => {
             register={register}
           />
           {errors.phone?.message && <p>{errors.phone.message}</p>}
-          <C.RadioContainer>
-            <C.FieldRadio>
+   
+            <S.FieldRadio>
               <label htmlFor="sexoM">
                 <input type="radio" value="M" name="sexo" id="sexoM" />
                 Masculino
@@ -60,10 +60,9 @@ const PeopleFisica = ({ Input , register, errors }) => {
                 <input type="radio" value="F" name="sexo" id="sexoF" />
                 Feminino
               </label>
-            </C.FieldRadio>
-          </C.RadioContainer>
+            </S.FieldRadio>
         </div>
-      </C.FieldContainerUser>
+      </S.FieldContainerUser>
     </>
   );
 };

@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-    align-items: center;
-    background: var(--cor-red);
     display: flex;
-    min-height: calc(100vh - 100px);
+    align-items: center;
     justify-content: center;
+    
+    background: var(--cor-red);
+
+    min-height: calc(100vh - 100px);
+    max-height: auto;
+
     padding: 2rem;
     
 `
@@ -22,11 +26,13 @@ export const Container = styled.section`
    
     
     & form {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        max-height: auto;
+        width: 100%;
     }
    
 `
@@ -41,28 +47,35 @@ export const FieldContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
+    flex-flow: row wrap;
+
+    height: auto;
     width: 100%;
+
     text-align: start;
     font-family: sans-serif;
+
+  
     & label {
-        display: flex;
         width: 70%;
+
+        display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: start;
         gap:10px;
-        & input {
-            align-self: end;
-        }
     }
     & input {
         width:280px;
+        height: 40px;
+        min-width:auto;
+
+
         margin-left: 1rem;
-        padding:.8em;
+
         border-radius: 5px;
-        border: none;
-        box-shadow: 1px 1px 5px black;
+        border:1px solid #00000068;
+
         outline:none;
     }
    
@@ -74,6 +87,7 @@ export const UserDataContainer = styled.div `
     flex-wrap: wrap;
     gap:10px;
     width: 100%;
+    height: auto;
     border:1px solid #00000068;
     padding:1rem;
     & p {
@@ -111,22 +125,27 @@ export const CadastroType = styled.div`
     }
 `
 
-export const FieldRadio = styled.div `
+export const FieldRadio = styled.section `
     display: flex;
-
     align-items: center;
+
     width:100%;
+
     & label {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         width: 30%;
+        & input {
+            width: 15px;
+        }
     }
     & input {
         display: inline-block;
-        width: 15px;
+        width: 150px;
         margin-bottom: .1rem;
+       
     }
    
     
@@ -135,11 +154,14 @@ export const FieldRadio = styled.div `
 `
 
 export const DataUser =styled.div `
-    width: 100%;
     display:flex;
-    height: 100%;
     justify-content: space-between;
+    position:relative;
+
+    width: 100%;
+    height: auto;
     border:1px solid #00000068;
+
     & label{
         margin: .5em;
     }
@@ -148,34 +170,35 @@ export const DataUser =styled.div `
 export const FieldContainerUser  =  styled.div `
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     border: none;
+
+
     width: 100%;
-    height: 100%;
+    max-height: 100%;
+    min-height: 300px;
     min-width: 320px;
+
+    padding: .5rem;
+  
     & div {
+        width: 50%;
+        min-width: 200px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        
     }
 `
 
-export const RadioContainer = styled.div `
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-`
-
 export const Btn = styled.button `
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 200px;
+    width: 180px;
     background-color:${({theme}) => theme.colors.colorOrange};
-    font-weight: bold;
+    font-weight: 500;
     color: white;
-    font-size:1.3rem;
-    box-shadow: 1px 1px 10px white;
+    font-size:1.2rem;
     margin: 1em;
     
 `
