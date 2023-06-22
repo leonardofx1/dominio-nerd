@@ -12,10 +12,19 @@ export const NumPais = styled.div `
     }
 `
 
-export const CepContainer = styled.div `
-    & a {
+export const CepContainer = styled.section `
+    width: 100%;
+    margin-top: 1rem;
+
+    & input {
         width: 90%;
-        text-align: end;
-        padding:.5rem;
+        margin-bottom: .5em;
+    }
+    & a {
+        display: block;
+        width: 100%;
+        margin-left:.8rem;
+        font-size: 1em;
+      
     }
 `

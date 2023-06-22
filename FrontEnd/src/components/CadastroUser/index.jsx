@@ -1,29 +1,22 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { schema } from "./schema";
-import UserForm from "./componentsForm/UserForm";
-
-
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 import * as S from "./style/styles";
 import Input from "../Input";
 import PeopleFisica from "./componentsForm/PeopleFisica";
 import Address from "./componentsForm/Address";
+import UserDataForm from "./componentsForm/UserDataForm";
+
+import useCep from "../Hook/useCep"; 
+
+
 
 const CadastroUser = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({
-    resolver: zodResolver(schema),
-  });
-  
+  const {register, handleSubmit, errors} = useCep()
+
+
   const handleform = (data) => console.log(data);
   console.log(errors);
+
   return (
     <S.Main>
       <S.Container>
@@ -32,7 +25,7 @@ const CadastroUser = () => {
         <form onSubmit={handleSubmit(handleform)}>
           <S.FieldContainer>
             <S.UserDataContainer>
-              <UserForm register={register} errors={errors} />
+              <UserDataForm register={register} errors={errors} />
             </S.UserDataContainer>
           </S.FieldContainer>
           <S.FieldContainer>
@@ -71,7 +64,7 @@ const CadastroUser = () => {
             </S.DataUser>
           </S.FieldContainer>
           <S.Btn>
-            cadastrar
+            Criar Conta
           </S.Btn>
         </form>
       </S.Container>

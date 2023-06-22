@@ -90,22 +90,17 @@ export const UserDataContainer = styled.div `
     height: auto;
     border:1px solid #00000068;
     padding:1rem;
+
+    & label {
+        margin-bottom: .5em;
+    }
+
     & p {
         color:red;
         font-size: small;
         margin-left: 1rem;
     }
-    & input{
-        width:280px;
-        margin-left: 1rem;
-        padding:.8em;
 
-        border-radius: 5px;
-        border: none;
-        box-shadow: 1px 1px 5px black;
-
-        outline:none;
-    }
 `
 export const CadastroType = styled.div`
   display: flex;
@@ -169,12 +164,10 @@ export const DataUser =styled.div `
 
 export const FieldContainerUser  =  styled.div `
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     border: none;
-
 
     width: 100%;
     max-height: 100%;
@@ -189,7 +182,6 @@ export const FieldContainerUser  =  styled.div `
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
     }
 `
 

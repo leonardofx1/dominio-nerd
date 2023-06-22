@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../../Input";
 
-function UserForm({ register, errors }) {
+function UserDataForm({ register, errors }) {
   return (
     <>
       <div>
@@ -46,4 +46,4 @@ function UserForm({ register, errors }) {
   );
 }
 
-export default UserForm;
+export default UserDataForm;
