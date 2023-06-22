@@ -23,7 +23,7 @@ export const Main = styled.main`
 export const Container = styled.div`
     align-items: center;
     background: #00000075;
-    color: var(--cor-light);
+    color:  $${({theme} ) => theme.colorLight};
     display: flex;
     justify-content: center;
     height:100%;
@@ -79,7 +79,7 @@ export const SlideField = styled.div`
 `
 
 export const SlideBox = styled.div`
-    background: var(--cor-light);
+    background:  ${({theme} ) => theme.colorLight};
     border-radius: 15px;
     margin: 0 1rem;
     min-height: calc(90vh - 100px);
@@ -101,7 +101,7 @@ export const SlideButton = styled.button`
     z-index: 5;
 
     svg{
-        color: var(--cor-yellow);
+        color: ${({theme} ) => theme.colors.colorYellow };
     }
 
     @media(max-width: 840px){

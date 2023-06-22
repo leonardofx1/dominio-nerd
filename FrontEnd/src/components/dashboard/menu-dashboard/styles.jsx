@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const MenuContainer = styled.section`
-    background: var(--cor-red);
-    color: var(--cor-light);
+    background: ${({theme}) => theme.colors.colorOrange};
+    color: ${({theme}) => theme.colors.colorLight};
     width: 20%;
     padding: 2rem;
     padding-right: 0;
@@ -12,7 +12,7 @@ export const List = styled.ul`
     list-style: none;
 
     :hover{
-        background: var(--cor-yellow);
+        background: ${({theme}) => theme.colors.colorYellow};
         font-size: 1.1rem;
     }
 `

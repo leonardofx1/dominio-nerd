@@ -1,13 +1,13 @@
-import React, { useId } from "react";
+import React from "react";
 
-const Input = ({label, type = 'text', nameInput, register }) => {
+const Input = ({label, type = 'text', nameInput, register}) => {
 
-    const id = useId()
+
     return (
          
         <>
-        <label htmlFor={id}>{label}</label>
-        <input type={type} id={id} name={nameInput} {...register(nameInput)} />
+        <label htmlFor={label}>{label}</label>
+        <input type={type}  id={label} name={nameInput} {...register(nameInput)} />
         </>
     )
 }

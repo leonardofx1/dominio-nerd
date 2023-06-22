@@ -1,54 +1,75 @@
 import React from "react";
-import {useForm} from 'react-hook-form';
-import {zodResolver} from '@hookform/resolvers/zod';
-import {schema} from './schema'
 
-
-import {AiOutlineArrowRight} from 'react-icons/ai'
-
-import * as C from './styles'
+import * as S from "./style/styles";
 import Input from "../Input";
+import PeopleFisica from "./componentsForm/PeopleFisica";
+import Address from "./componentsForm/Address";
+import UserDataForm from "./componentsForm/UserDataForm";
+
+import useCep from "../Hook/useCep"; 
+
+
 
 const CadastroUser = () => {
-    const  {
-      register,
-      handleSubmit,
-       formState: {errors}
-    } = useForm({
-        resolver: zodResolver(schema)
-    })
+  const {register, handleSubmit, errors} = useCep()
 
-    const handleform = (data) => console.log(data)
-    console.log(errors)
-    return (
 
-        <C.Main>
-            <C.Container>
-                <C.Title>
-                    Cadastre-se
-                </C.Title>
-                <div>
-                    <form onSubmit={handleSubmit(handleform)}>
-                        <C.FieldContainer>
-                            <C.Entrega>
-                            <Input nameInput='nameUser' type='text'  label='Nome de Usuário:' register={register}/>
-                            <Input nameInput='email' type='text' label='E-mail:' register={register} />
-                            {errors?.email?.message && <p> {errors.email.message}</p>}
-                            <Input nameInput='password' type='password' label='Senha:' register={register} />
-                            {errors?.password?.message && <p>{errors.password.message}</p>}
-                            <Input nameInput='confirmPassword' type='password' label='Confirme sua senha:' register={register} />
-                            {errors?.confirmPassword?.message && <p>{errors.confirmPassword.message}</p>}
-                            <Input nameInput='tel' type='tel' label='Celular'  register={register}/>
-                            {errors?.tel?.message && <p>{errors.tel.message}</p>}
-                            </C.Entrega>
-                        </C.FieldContainer>
-                        <C.Btn> Avançar <AiOutlineArrowRight/></C.Btn>
-                    </form>
-                </div>
-            </C.Container>
+  const handleform = (data) => console.log(data);
+  console.log(errors);
 
-        </C.Main>
-    )
-}
+  return (
+    <S.Main>
+      <S.Container>
+        <S.Title>Cadastre-se</S.Title>
 
-export default CadastroUser
+        <form onSubmit={handleSubmit(handleform)}>
+          <S.FieldContainer>
+            <S.UserDataContainer>
+              <UserDataForm register={register} errors={errors} />
+            </S.UserDataContainer>
+          </S.FieldContainer>
+          <S.FieldContainer>
+            <S.CadastroType>
+              <p>Tipos de cadastro :</p>
+              <S.FieldRadio>
+                <label htmlFor="pessoaTypeF">
+                  <input
+                    type="radio"
+                    name="pessoaType"
+                    value="pessoaFisica"
+                    id="pessoaTypeF"
+                  />
+                  Pessoa Física
+                </label>
+
+                <label htmlFor="pessoaTypeJ">
+                  <input
+                    type="radio"
+                    name="pessoaType"
+                    value="pessoaJuridica"
+                    id="pessoaTypeJ"
+                  />
+                  Pessoa Jurídica
+                </label>
+              </S.FieldRadio>
+            </S.CadastroType>
+            <S.DataUser>
+              <PeopleFisica Input ={Input} register={register} errors={errors} /> 
+
+            </S.DataUser>
+          </S.FieldContainer>
+         <S.FieldContainer>
+          <S.DataUser>
+          <Address Input={Input } register={register} errors={errors} />
+            </S.DataUser>
+          </S.FieldContainer>
+          <S.Btn>
+            Criar Conta
+          </S.Btn>
+        </form>
+      </S.Container>
+    </S.Main>
+  );
+};
+
+export default CadastroUser;

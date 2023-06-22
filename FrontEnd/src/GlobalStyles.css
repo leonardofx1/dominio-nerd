@@ -4,13 +4,7 @@
   box-sizing: border-box;
 }
 
-:root {
-  --cor-dark: #000000;
-  --cor-gray: #525252;
-  --cor-light: #ffefe6;
-  --cor-yellow: #fcae1d;
-  --cor-red:#fe502d;
-}
+
 
 a {
   font-weight: 500;

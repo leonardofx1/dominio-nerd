@@ -2,7 +2,7 @@ import React from 'react'
 import Minis from '/minis.jpg'
 
 import * as C from './styles'
-import Card from '../cards'
+import Card from '../Cards'
 
 const Products = () => {
     return(
