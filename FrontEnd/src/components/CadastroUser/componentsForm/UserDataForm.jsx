@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../../Input";
 
-function UserDataForm({ register, errors }) {
+const UserDataForm = ({ register, errors }) =>  {
   return (
     <>
       <div>

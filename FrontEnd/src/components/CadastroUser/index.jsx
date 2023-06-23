@@ -6,13 +6,10 @@ import PeopleFisica from "./componentsForm/PeopleFisica";
 import Address from "./componentsForm/Address";
 import UserDataForm from "./componentsForm/UserDataForm";
 
-import useCep from "../Hook/useCep"; 
-
-
+import useCep from "../Hook/useCep";
 
 const CadastroUser = () => {
-  const {register, handleSubmit, errors} = useCep()
-
+  const { register, handleSubmit, errors } = useCep();
 
   const handleform = (data) => console.log(data);
   console.log(errors);
@@ -54,18 +51,15 @@ const CadastroUser = () => {
               </S.FieldRadio>
             </S.CadastroType>
             <S.DataUser>
-              <PeopleFisica Input ={Input} register={register} errors={errors} /> 
-
+              <PeopleFisica register={register} errors={errors} />
             </S.DataUser>
           </S.FieldContainer>
-         <S.FieldContainer>
-          <S.DataUser>
-          <Address Input={Input } register={register} errors={errors} />
+          <S.FieldContainer>
+            <S.DataUser>
+              <Address register={register} errors={errors} />
             </S.DataUser>
           </S.FieldContainer>
-          <S.Btn>
-            Criar Conta
-          </S.Btn>
+          <S.Btn>Criar Conta</S.Btn>
         </form>
       </S.Container>
     </S.Main>

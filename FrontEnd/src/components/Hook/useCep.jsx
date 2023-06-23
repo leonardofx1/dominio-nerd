@@ -5,11 +5,19 @@ import { schema } from "../CadastroUser/schema";
 import { useQuery } from "react-query";
 import api from "../../_config/apiCep";
 
+const setData = (data, setValue) => {
+  console.log(data)
+  setValue('address.cep', data?.cep)
+  setValue('address.cidade', data?.localidade)
+  setValue('address.Estado', data?.uf)
+  setValue('address.Bairro', data?.bairro)
+}
+
 const useCep = () => {
   const {register, handleSubmit, watch, formState: { errors }, setValue, } = useForm({resolver: zodResolver(schema),});
 
   const zipCode = watch('cep')
-
+console.log(zipCode)
   const { data, error } = useQuery({
     queryKey: ["cep", zipCode],
     queryFn: async ({ queryKey }) => {
@@ -19,8 +27,9 @@ const useCep = () => {
     },
 
   });
-  if(data)
-  setValue('cidade', data?.localidade)
+  
+  data && setData(data, setValue)
+
 
 
   return { register, handleSubmit, watch, errors, setValue };

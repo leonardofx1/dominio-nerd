@@ -10,8 +10,18 @@ export const schema = z.object({
     password: z.string().min(5, {message: 'A senha deve ter no mínimo 5 caracteres'})
     .regex(validPassword, 'A senha deve conter pelo menos uma letra minúscula, uma maiúscula,e um caractere especial'),
     confirmPassword: z.string(),
-    tel: z.string().regex(validPhone, 'Numero ínvalido ')
-    .transform(tel =>  parseInt(tel))
+    fullName: z.string(),
+    tel: z.string().regex(validPhone, 'Numero ínvalido ').transform(tel =>  parseInt(tel)),
+    address: z.object({
+        cep:z.string().min(8, {message: 'insira um cep válido'}),
+        cidade: z.string().nonempty('por favor preencha esse campo'),
+        estado:z.string(),
+        bairro:z.string(),
+        numeroCasa: z.number(),
+        complemento: z.string(),
+        pais: z.string(),
+    })
+    
 }).refine( data => data.password === data.confirmPassword, {
     message: 'As senhas não são iguais',
     path: ['confirmPassword']

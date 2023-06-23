@@ -1,9 +1,9 @@
 import React from "react";
-
+import Input from '../../Input'
 
 import * as S from "../style/styles";
 
-const PeopleFisica = ({ Input , register, errors }) => {
+const PeopleFisica = ({register, errors }) => {
   return (
     <>
       <S.FieldContainerUser>
